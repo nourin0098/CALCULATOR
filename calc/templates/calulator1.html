@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{% url 'calculation' %}">
+    {% csrf_token %}
+<div align="center" style="background-color:yellow">
+    <h1>CALCULATOR</h1>
+    <table>
+        <tr>
+            <td>first number:</td>
+            <td><input type="text" name="num1"></td>
+        </tr>
+        <tr>
+            <td>second number:</td>
+            <td><input type="text" name="num2"></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><input type="submit" name="add" value="add"></td>
+            <td><input type="submit" name="sub" value="sub"></td>
+            <td><input type="submit" name="mul" value="mul"></td>
+            <td><input type="submit" name="div" value="div"></td>
+            
+        </tr>
+    </table>
+</div>
+    </form>
+</body>
+</html>
